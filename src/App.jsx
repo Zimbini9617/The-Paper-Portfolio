@@ -57,7 +57,7 @@ const App = () => {
 
               <h5 className=" font-NewLight font-medium">
                 {' '}
-                <span className="font-CondMedium text-lg ml-2">TIP!</span> Drag
+                <span className="font-CondMedium text-lg ml-2 font-bold">TIP!</span> Drag
                 sideways to navigate
               </h5>
             </div>
@@ -86,7 +86,45 @@ const App = () => {
           </h1>
 
           {/* start new section here */}
-          <section></section>
+        
+          <div className="w-full h-[150vh] bg-[#C4BCB3] flex items-center justify-between py-20 px-10">
+          <div className="h-full w-[35%] pr-10 border-r-2 border-gray-800">
+            <h2 className="text-[8rem]/[0.8] text-center font-normal font-canopee">
+              Interactive{' '}
+              <span className="text-[12rem] font-semibold">ARTIST!</span>
+            </h2>
+            <img
+              className="h-[50%] w-full object-cover"
+              src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c6ce3bc0c7d1cd4ca847e_avatar-star-p-800.jpeg"
+              alt="artist"
+            />
+            <p className="text-4xl font-newmedium text-gray-800 mt-[20px]">
+              <span className="text-6xl bg-gray-900 font-semibold p-2 text-white font-newmedium">
+                A
+              </span>
+              s a Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Magni delectus tenetur in ad. Ipsum quibusdam fuga dolorum vitae
+              dolore perferendis eveniet, voluptas quam nemo praesentium in,
+              necessitatibus libero minima error!
+            </p>
+          </div>
+          <div className="h-full w-[60%]">
+            <img
+              className="h-[60%] w-full object-cover font-thin"
+              src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c62f4c78c4ba46a1268be_avatar-1-p-2000.jpeg"
+              alt="artist second"
+            />
+            <h1 className="uppercase font-canopee text-[8rem]/[8rem] mt-14">
+              Digital art director <br />
+              Interactive designer <br />
+              creative developer <br />
+              based in amsterdam, Nl
+            </h1>
+          </div>
+        </div>
+
+
+        {/* start new section here */}
         </div>
       </div>
     </div>
