@@ -5,7 +5,7 @@ import gsap from 'gsap';
 
 const App = () => {
   let tl = gsap.timeline();
-  let wrapepr = useRef(null);
+  let wrapper = useRef(null);
   let main = useRef(null);
 
   useEffect(() => {
@@ -14,9 +14,9 @@ const App = () => {
       smooth: true,
     });
     scroll.scrollTo(main.current);
-    tl.to(wrapepr.current, { y: '100vh', scale: 0.6, duration: 0 });
-    tl.to(wrapepr.current, { y: '30vh', duration: 1, delay: 1 });
-    tl.to(wrapepr.current, { y: '0vh', rotate: 360, scale: 1, duration: 0.8 });
+    tl.to(wrapper.current, { y: '100vh', scale: 0.6, duration: 0 });
+    tl.to(wrapper.current, { y: '30vh', duration: 1, delay: 1 });
+    tl.to(wrapper.current, { y: '0vh', rotate: 360, scale: 1, duration: 0.8 });
   });
 
   return (
@@ -24,7 +24,7 @@ const App = () => {
       <div className="bg-[#222] overflow-hidden" ref={main} data-scroll>
         <div
           className="bg-[#C5BEB4] h-[125vh] w-screen relative overflow-hidden"
-          ref={wrapepr}
+          ref={wrapper}
         >
           <Navbar />
           <section className="w-full h-[420px] flex items-center justify-between py-10 px-12">
@@ -178,18 +178,21 @@ const App = () => {
           </div>
 
           <div className="w-[40%]">
-            <h2 className='font-Canopee font-semibold text-[150px]/[100px]'>THINK, CREATE <br />
-            <br /><span className='font-Canopee font-thin text-[350px]/[300px]'>DELIVER</span></h2>
+            <h2 className='font-Canopee font-semibold text-[100px]/[100px] mx-10'>THINK, CREATE <br />
+            <span className='font-Canopee font-thin text-[300px]/[300px]'>DELIVER</span></h2>
             <p className='font-CondMedium text-[50px] text-[#2f2f2f] font-normal ml-2'>
-              <span className='bg-[#222] text-white mr-2 text-[90px]/[90px] py-2'>A</span> stong project is created by dee collaboration. i designed, develop, and deliver websites that drive results and win awards. <br />
+              <span className='bg-[#222] text-white mr-2 text-[50px]/[50px] py-2'>A</span> stong project is created by deep collaboration. i designed, develop, and deliver websites that drive results and win awards. <br />
               <br />Like an artisan, I like to start from raw matter and give life ton iconic product that makes your brand stand out, starting from Visual Strategy that guide the clients vision to reality.
             </p>
-            <div>
+            <div className="h-[200px] bg-[#CAC1B6] border border-[#2f2f2fc6] rounded-[50%] w-full ml-6 flex items-center justify-center flex-nowrap overflow-hidden  hover:cursor-pointer animation">
               <img
                 src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/61001a3509319b6ae39e156b_arrow-long.svg"
-                alt=""
+                alt="icon"
+                className="h-[60px] transition ease-in duration-500 translate-x-[-120%]"
               />
-              <h1>All Work</h1>
+              <h1 className="text-6xl font-bold font-Canopee w-full h-full flex items-center justify-center translate-x-[-26%] transition ease-in duration-500">
+                All Work
+              </h1>
             </div>
           </div>
         </section>

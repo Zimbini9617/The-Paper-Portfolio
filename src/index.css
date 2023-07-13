@@ -25,3 +25,52 @@ html {
   src: url('./assets/EditorialNew-Light.woff2');
   format: ('woff2');
 }
+
+.animation:hover img {
+  transform: translateX(76%);
+}
+
+.animation:hover h1 {
+  transform: translateX(100%);
+}
+
+.move::-webkit-scrollbar {
+  display: none;
+}
+
+.move h1 {
+  font-size: 100px;
+  font-weight: 100;
+  display: inline-block;
+  animation-timing-function: linear;
+  margin-right: 30px;
+  animation-name: scroll;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.move h1 span {
+  background-color: #1b1b1b;
+  color: #c4bcb3;
+  padding: 0 12px;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #c4bcb3;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - 34px));
+  }
+}
+
+.move:hover h1 {
+  animation-play-state: paused;
+}
