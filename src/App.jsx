@@ -200,15 +200,28 @@ const App = () => {
         { /* new section */ }
 
         <section className='w-full h-[420px] flex items-center justify-between bg-[#C4BCB3] px-5'>
-          <div className='border-b-2 w-full border-black'>
-            <div>
-              <h2>Site of the day<br />
-              AWARDS 9</h2>
+          <div className='border-t-2 w-full border-black'>
+            <div className='border-b-2 w-full h-48 border-black'>
+            <div className='flex items-center justify-between'>
+              <h2 className='font-serif font-normal text-4xl mt-10'>SITE OF THE DAY<br />
+              <span className='font-Canopee font-bold mt-4 text-8xl'>AWARDS 9</span></h2>
 
-              <h3></h3>
+              <h3 className='font-serif font-normal text-4xl mt-10'>SITE OF THE MONTH<br />
+              <span className='font-Canopee font-bold mt-4 text-8xl'>WINNERS 1</span></h3>
+
+              <h4 className='font-serif font-normal text-4xl mt-10'>FWA OF THE DAY <br />
+              <span className='font-Canopee font-bold mt-4 text-8xl'>AWARDS 6</span></h4>
+
+              <h5 className='font-serif font-normal text-4xl mt-10'>ACCLAIMED<br />
+              <span className='font-Canopee font-bold mt-4 text-8xl'>MENTIONS 8</span></h5>
             </div>
           </div>
+          </div>
         </section>
+
+        { /* start new section */ }
+
+        <section></section>
       </div>
     </>
   );
