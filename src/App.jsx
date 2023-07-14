@@ -86,7 +86,7 @@ const App = () => {
           </h1>
         </div>
 
-        {/* start new section here */}
+        {/* new section here */}
         <section className="bg-[#C5BEB4] w-full h-[140vh] py-14 px-[40px] flex items-center justify-between">
           <div className="w-[35%] h-full pr-[50px] border-r-2 border-[#555454]">
             <h1 className="text-[100px]/[150px] font-Canopee font-thin">
@@ -144,7 +144,7 @@ const App = () => {
 
                 <h5 className=" font-NewLight font-medium ">
                   {' '}
-                  <span className="font-CondMedium text-lg ml-2">
+                  <span className="font-CondMedium font-bold text-lg ml-2">
                     TIP!
                   </span>{' '}
                   Click on the image to explore
@@ -193,6 +193,19 @@ const App = () => {
               <h1 className="text-6xl font-bold font-Canopee w-full h-full flex items-center justify-center translate-x-[-26%] transition ease-in duration-500">
                 All Work
               </h1>
+            </div>
+          </div>
+        </section>
+
+        { /* new section */ }
+
+        <section className='w-full h-[420px] flex items-center justify-between bg-[#C4BCB3] px-5'>
+          <div className='border-b-2 w-full border-black'>
+            <div>
+              <h2>Site of the day<br />
+              AWARDS 9</h2>
+
+              <h3></h3>
             </div>
           </div>
         </section>
